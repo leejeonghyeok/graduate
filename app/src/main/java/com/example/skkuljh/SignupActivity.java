@@ -13,10 +13,12 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.android.material.textfield.TextInputEditText;
 
+import org.w3c.dom.Text;
+
 public class SignupActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    TextInputEditText TextinputEmail, TextinputPassword;
+    TextInputEditText TextinputEmail, TextinputPassword,TextName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
