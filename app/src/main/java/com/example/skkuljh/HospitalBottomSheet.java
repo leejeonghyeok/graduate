@@ -28,7 +28,6 @@ public class HospitalBottomSheet extends BottomSheetDialogFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.hosinfo, container, false);
 
-        // 병원 정보를 View에 세팅
         TextView hospitalName = view.findViewById(R.id.hos_name);
         TextView hospitalAddress = view.findViewById(R.id.hos_address);
         Button hospitalPhone = view.findViewById(R.id.hos_number);
