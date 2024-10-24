@@ -47,10 +47,10 @@ public class HospitalBottomSheet extends BottomSheetDialogFragment {
         hospitalPhone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 전화번호를 URI 형식으로 변환
+
                 String phoneNumber = hosData.getTELNO_INFO();
 
-                // 전화번호의 포맷을 확인하여 필요한 경우 '-'를 제거
+
                 phoneNumber = phoneNumber.replace("-", "");
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
@@ -62,10 +62,9 @@ public class HospitalBottomSheet extends BottomSheetDialogFragment {
         hospitalWebsite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 홈페이지 URL로 이동
                 String url = hosData.getHMPG_URL();
                 if (!url.startsWith("http://") && !url.startsWith("https://")) {
-                    url = "http://" + url;  // URL 앞에 프로토콜 추가
+                    url = "http://" + url;
                 }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
