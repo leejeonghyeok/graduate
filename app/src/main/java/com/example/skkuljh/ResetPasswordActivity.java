@@ -17,7 +17,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.reset_password); // 비밀번호 찾기 화면의 XML 레이아웃 파일로 변경
+        setContentView(R.layout.reset_password);
 
         mAuth = FirebaseAuth.getInstance(); // FirebaseAuth 초기화
 

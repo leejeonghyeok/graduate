@@ -34,7 +34,7 @@ public class SignupActivity extends AppCompatActivity {
         canclebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // 현재 액티비티 종료
+                finish();
             }
         });
         findViewById(R.id.SignupButton).setOnClickListener(new View.OnClickListener() {
