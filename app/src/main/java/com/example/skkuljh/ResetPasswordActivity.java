@@ -40,8 +40,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         CustomToast.showToast(ResetPasswordActivity.this, "이메일이 전송되었습니다. ", R.drawable.msg,3000);
-                        // 성공적으로 이메일이 전송되면 로그인 화면으로 돌아가기
-                        finish(); // 현재 액티비티 종료
+                        finish();
                     } else {
                         CustomToast.showToast(ResetPasswordActivity.this, "이메일 전송 실패 ", R.drawable.msg,3000);
                     }
