@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/back_button_login"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/left_arrow"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/Textview_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jeju_font"
+                    android:textSize="30dp"
+                    android:padding="10dp"
+                    android:background="@drawable/edge_name"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/edge_name"
+                    android:text="건강 소식지"
+                    android:textSize="28dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/jeju_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="@drawable/edge_name"
+                    android:padding="10dp"
+                    android:id="@+id/my_recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    tools:listitem="@layout/row_news" />
+
+                <android.widget.Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/self"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stateListAnimator="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/font_src"
+                    android:text="자가 진단"
+                    android:layout_marginTop="5dp"
+                    android:textSize="30dp"
+                    android:background="@drawable/edge_button"
+                    android:drawableLeft="@drawable/drawble_myself" />
+
+                <android.widget.Button
+                    android:id="@+id/graph"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stateListAnimator="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/font_src"
+                    android:text="내 결과들"
+                    android:layout_marginTop="5dp"
+                    android:textSize="30dp"
+                    android:background="@drawable/edge_button"
+                    android:drawableLeft="@drawable/drawble_graph" />
+
+                <android.widget.Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/findhos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stateListAnimator="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/font_src"
+                    android:text="병원 찾기"
+                    android:layout_marginTop="5dp"
+                    android:textSize="30dp"
+                    android:background="@drawable/edge_button"
+                    android:drawableLeft="@drawable/drawble_hos_real" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

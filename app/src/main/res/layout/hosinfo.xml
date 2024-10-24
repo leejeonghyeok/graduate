@@ -1,0 +1,96 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 상단에 드래그 핸들 추가 (optional) -->
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 병원 이름과 병원 주소를 담은 가로 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hos_name"
+            android:layout_margin="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jeju_font"
+            android:background="@drawable/edge_name"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/hos_address"
+            android:layout_margin="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suwon"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jeju_font"
+            android:background="@drawable/edge_name"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <!-- 병원 번호 -->
+    <android.widget.Button
+        android:id="@+id/hos_number"
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital Number"
+        android:textSize="20sp"
+        android:fontFamily="@font/jeju_font"
+        android:background="@drawable/edge_name"
+        android:padding="10dp"
+        />
+
+    <!-- 병원 주소 1 -->
+    <TextView
+        android:id="@+id/hos_address1"
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="병원 주소1"
+        android:textSize="20sp"
+        android:fontFamily="@font/jeju_font"
+        android:background="@drawable/edge_name"
+        android:padding="10dp"/>
+
+    <!-- 병원 주소 2 -->
+    <TextView
+        android:id="@+id/hos_address2"
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="병원 주소2"
+        android:textSize="20sp"
+        android:fontFamily="@font/jeju_font"
+        android:background="@drawable/edge_name"
+        android:padding="10dp"/>
+
+    <android.widget.Button
+        android:id="@+id/hos_HMPG"
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="병원 홈페이지"
+        android:textSize="15sp"
+        android:fontFamily="@font/jeju_font"
+        android:background="@drawable/edge_name"
+        android:padding="10dp"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginBottom="32dp" />
+
+    <RadioGroup
+        android:id="@+id/answerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <RadioButton
+            android:id="@+id/yesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예"
+            android:textSize="40sp"/>
+        <RadioButton
+            android:id="@+id/noButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아니오"
+            android:textSize="40sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤 로"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:backgroundTint="@color/pink"
+                app:cornerRadius="16dp"
+                app:iconPadding="8dp"
+                android:layout_marginEnd="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/jeju_font"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다 음"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:backgroundTint="@color/pink"
+                app:cornerRadius="16dp"
+                app:iconPadding="8dp"
+                android:layout_marginEnd="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/jeju_font"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나가기"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:backgroundTint="@color/pink"
+            app:cornerRadius="16dp"
+            app:iconPadding="8dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/font_src"
+            />
+    </LinearLayout>
+</LinearLayout>

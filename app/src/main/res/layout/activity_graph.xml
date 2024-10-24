@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="좌우로 움직여서 점수들을 볼 수 있어요!\n\n점수를 누르면 검사 날짜가 보여요!"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:textStyle="bold"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로 가기"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pink"
+        android:textSize="26dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/jeju_font"
+        />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나가기"
+        android:layout_marginTop="20dp"
+        android:textSize="26dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/jeju_font"
+        />
+</LinearLayout>
