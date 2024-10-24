@@ -139,7 +139,6 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            //Toast.makeText(NaverMapActivity.this, "데이터 파싱 실패", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }, new Response.ErrorListener() {
